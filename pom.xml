@@ -2,17 +2,24 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <name>array-init-grammar</name>
   <groupId>org.abcd.examples</groupId>
-  <artifactId>array-init</artifactId>
+  <artifactId>array-init-grammar</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
-
-  <name>array-init</name>
-  <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <!-- for the deploy target -->
+  <distributionManagement>
+    <repository>
+      <id>martin.repo</id>
+      <name>Martin's repo</name>
+      <url>file:///home/martin/remote-maven-repos/</url>
+    </repository>
+  </distributionManagement>
 
   <dependencies>
     <dependency>
